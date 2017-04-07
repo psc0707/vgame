@@ -1,0 +1,13 @@
+1   open sublime as admin
+
+2   open file sublime
+C:\Windows\System32\drivers\etc\hosts
+
+
+3   add this line before end of document
+    change xxxxx for desired name
+127.0.0.1 xxxxxx.dev
+
+4.  open CMD (windows key + R -> then enter CMD )
+    in cmd enter this:
+C:\xampp\htdocs>ipconfig /flushdns

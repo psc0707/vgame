@@ -1,0 +1,21 @@
+img {
+	width: 6vw;
+	/*height: 1vh;*/
+}
+/*details*/
+#posterDetailsMovies{
+	background-repeat: no-repeat;
+	width: 500px;
+	/* height: 50%; */
+        height: 400px;
+	position: relative;
+	left: 13px;
+	margin-right: 60px;
+}
+
+#catName{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	color: #3498db;
+}

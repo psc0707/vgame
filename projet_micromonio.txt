@@ -1,0 +1,66 @@
+-----------------------------------------------
+ Projet avec W : site de gestion de jeux vidéo
+-----------------------------------------------
+
+1- Importer la database : videogame.sql
+	=> génère la database "micromonio"
+
+2- Champs "genre" et "console" sont des integer => utiliser des constantes de classes + méthodes statiques
+
+3- Faire la page "Home"
+
+4- Faire le menu (contient un lien vers chaque page)
+
+5- Faire la page "Console"
+
+6- Faire la page "Ajout/Modification d'un jeu vidéo"
+
+7- Mettre en place le système d'autorisation (signup, signin)
+	* Il faut être connecté pour accéder aux pages du projet
+	* La page "Ajout/Modification d'un jeu vidéo" est accessible aux "admin"
+	* Toutes les autres pages sont accessibles aux "user"
+
+<OPTIONS>
+
+8- Faire la page "Détails"
+
+9- Ajouter la "Suppresion" à la page "Ajout/Modification d'un jeu vidéo"
+
+10- Ajouter la gestion du mot de passe oublié
+
+11- Faire la page "Genre"
+
+</OPTIONS>
+
+
+Home
+	* URL : http://micromonio.dev/
+	* afficher 4 jeux vidéo aléatoirement (titre, image) avec le nom de la console correspondante
+	* l'image et le titre du jeu amène sur la page "Détails"
+	* le nom de la console amène sur la page "Console"
+
+Console (platform)
+	* URL : http://micromonio.dev/consoles/1/PC/ (où 1 est l'id de la console)
+	* Liste tous les jeux vidéo (titre, genre et année) pour la console
+	* Le titre de chaque jeu vidéo amène sur la page "Détails" du jeu vidéo
+
+Genre (option)
+	* URL : http://micromonio.dev/genre/1/Aventure/ (où 1 est l'id du genre)
+	* Liste tous les jeux vidéo (titre, console et année) pour le genre
+	* Le titre de chaque jeu vidéo amène sur la page "Détails" du jeu vidéo
+
+Détails
+	* URL : http://micromonio.dev/consoles/1/PC/21/day-of-the-tentacle/
+		** 1 est l'id de la console
+		** PC est le nom de la console
+		** 21 est l'id du jeu video
+		** day-of-the-tentacle est le titre reformaté du jeu vidéo
+	* Liste toutes les informations sur le jeu vidéo donné
+	* Si l'utilisateur connecté est "admin", alors un lien "Modifier" apparait et renvoie sur la page "Ajout/Modification d'un jeu vidéo"
+
+Ajout/Modification d'un jeu vidéo
+	* URL Ajout : http://micromonio.dev/admin/videogame/add
+	* URL Modification : http://micromonio.dev/admin/videogame/edit/21
+		** 21 est l'id du jeu video
+	* "CU" parmi CRUD
+	* Formulaire pour ajouter ou modifier
